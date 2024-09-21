@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h2>Welcome to Fridge manager!!!!</h2><br>
+    <form action="/loginpage" {% csrf_token %}
+        Already have an account?
+        <br>
+        <button type = "submit"> Login </button>
+    </form>
+    <br>
+    <form action="/registerpage">
+        New user? Please Register
+        <br>
+        <button type = "submit"> Register </button>
+    </form>
+</div>
+</body>
+</html>
